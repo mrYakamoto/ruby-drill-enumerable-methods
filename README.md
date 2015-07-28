@@ -20,7 +20,7 @@ Constraint: do not use the `for` or `each` method in any of your solutions to th
 
 Enumerable is chock full of useful, convenient methods that make working with enumerables much simpler. This exercise will expose you to a handful of these methods. Complete each of the following tasks by using the specific Enumerable method. It's your job to figure out how to call it to perform the desired task.
 
-* Print the elements at indices 1, 3, 5, 7, etc. on separate lines. You should make use of `Enumerable#each_with_index`
+* Return an array of the elements from the odd indexes of an array. You should make use of `Enumerable#each_with_index`
 * Return the odd numbers from a list of integers. You should make use of `Enumerable#select`
 * Return the first number from an Array that is less than a particular number - 'limit.' You should make use of `Enumerable#find`
 * Take an Array of Strings and return a new Array with an exclamation point appended to each String. You should make use of `Enumerable#map`
