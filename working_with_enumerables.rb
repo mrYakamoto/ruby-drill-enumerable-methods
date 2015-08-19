@@ -1,8 +1,3 @@
-# TODO: Returns an array of elements at indices 1, 3, 5, 7, etc.
-#       Use #each_with_index.
-def odd_indexed_elements(array)
-end
-
 # TODO: Return the odd numbers from a list of integers.
 #       Use #select.
 def odd_integers(array)
@@ -26,4 +21,9 @@ end
 # TODO: Reorganize an Array of the elements into groups of 3, and then sort each group alphabetically.
 #       Use #each_slice in combination with other enumerable methods.
 def sorted_triples(array)
+end
+
+# TODO: Returns an array of elements at indices 1, 3, 5, 7, etc.
+#       Use #each_with_index.
+def odd_indexed_elements(array)
 end

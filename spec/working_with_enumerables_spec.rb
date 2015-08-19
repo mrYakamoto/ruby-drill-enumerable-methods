@@ -1,14 +1,5 @@
 require_relative '../enumerables'
 
-describe 'odd_indexed_elements' do
-  it 'returns a collection of the elements at odd indices' do
-    strings = ['foo','bar','baz','bang']
-
-    elements = odd_indexed_elements(strings)
-    expect(elements).to match_array ['bar','bang']
-  end
-end
-
 describe 'odd_integers' do
   it 'returns a collection of any odd integers' do
     numbers = [3, 4, 7, 9, 10, 16]
@@ -51,5 +42,14 @@ describe 'sorted_triples' do
 
     expect(sorted_triples(words)).to eq [['pork', 'salted', 'the'],
                                          ['good', 'is', 'particularly']]
+  end
+end
+
+describe 'odd_indexed_elements' do
+  it 'returns a collection of the elements at odd indices' do
+    strings = ['foo','bar','baz','bang']
+
+    elements = odd_indexed_elements(strings)
+    expect(elements).to match_array ['bar','bang']
   end
 end
