@@ -1,39 +1,55 @@
-require_relative('../enumerables')
+require_relative '../enumerables'
 
 describe 'odd_indexed_elements' do
-  it 'should provide elements with odd indices' do
-    expect(odd_indexed_elements(["foo","bar","baz","bang"])).to eq(["bar","bang"])
+  it 'returns a collection of the elements at odd indices' do
+    strings = ['foo','bar','baz','bang']
+
+    elements = odd_indexed_elements(strings)
+    expect(elements).to match_array ['bar','bang']
   end
 end
 
 describe 'odd_integers' do
-  it 'should return only add integers' do
-    expect(odd_integers([3, 4, 7, 9, 10, 16])).to eq([3, 7, 9])
+  it 'returns a collection of any odd integers' do
+    numbers = [3, 4, 7, 9, 10, 16]
+
+    odds = odd_integers(numbers)
+    expect(odds).to match_array [3, 7, 9]
   end
 end
 
 describe 'first_under' do
-  it 'should return the first number under "limit"' do
-    expect(first_under([13, 21, 7, 0, 11, 106], 10)).to eq(7)
+  it 'returns the first number under "limit"' do
+    numbers = [13, 21, 7, 0, 11, 106]
+
+    number = first_under(numbers, 10)
+    expect(number).to eq 7
   end
 end
 
 describe 'add_bang' do
-  it 'should return an array with an exclamation point added to each element' do
-    expect(add_bang(["hi", "mom"])).to eq(["hi!", "mom!"])
+  it 'returns a collection with an exclamation point added to each element' do
+    strings = ['hi', 'mom']
+
+    with_bang = add_bang(strings)
+    expect(with_bang).to eq ['hi!', 'mom!']
   end
 end
 
 describe 'sum' do
-  it 'should sum the contents of the array' do
-    expect(sum([1, 1, 2, 3, 5])).to eq(12)
+  it 'sums the elements in a collection' do
+    numbers = [1, 1, 2, 3, 5]
+
+    total = sum(numbers)
+    expect(total).to eq 12
   end
 end
 
 describe 'sorted_triples' do
-  it 'should re-organize an array into groups of three and source each group alphabetically' do
+  it 're-organizes a collection into groups of three and sorts each group alphabetically' do
     words = %w(the salted pork is particularly good)
-    expect(sorted_triples(words)).to eq([["pork", "salted", "the"],
-                                         ["good", "is", "particularly"]])
+
+    expect(sorted_triples(words)).to eq [['pork', 'salted', 'the'],
+                                         ['good', 'is', 'particularly']]
   end
 end
