@@ -1,4 +1,4 @@
-require_relative('power_of_enumerables')
+require_relative('../enumerables')
 
 describe 'odd_indexed_integers' do
   it 'should provide elements with odd indices' do
