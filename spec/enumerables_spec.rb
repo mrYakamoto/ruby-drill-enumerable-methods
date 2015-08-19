@@ -1,8 +1,8 @@
 require_relative('../enumerables')
 
-describe 'odd_indexed_integers' do
+describe 'odd_indexed_elements' do
   it 'should provide elements with odd indices' do
-    expect(odd_indexed_integers(["foo","bar","baz","bang"])).to eq(["bar","bang"])
+    expect(odd_indexed_elements(["foo","bar","baz","bang"])).to eq(["bar","bang"])
   end
 end
 

@@ -3,7 +3,7 @@
 
 # TODO: Return array of elements at indices 1, 3, 5, 7, etc.
 #       You should make use of Enumerable#each_with_index
-def odd_indexed_integers(array)
+def odd_indexed_elements(array)
 end
 
 # TODO: Return the odd numbers from a list of integers.
