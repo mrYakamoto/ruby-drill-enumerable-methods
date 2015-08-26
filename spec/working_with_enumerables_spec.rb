@@ -1,4 +1,4 @@
-require_relative '../enumerables'
+require_relative '../working_with_enumerables'
 
 describe 'odd_integers' do
   it 'returns a collection of any odd integers' do
