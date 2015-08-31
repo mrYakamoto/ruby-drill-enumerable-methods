@@ -12,7 +12,7 @@ This challenge will expose us to a handful of the more commonly used enumerable 
 ### Release 0: Utilize Enumerable Methods
 In the `working_with_enumerables.rb` file there is a series of empty method definitions.  For each method, there is a comment describing the desired behavior of the method and a specific enumerable method to use.  We're going to write out these methods to match the descriptions of their behaviors.
 
-Tests have also been provided, further illustrating the desired behavior of each method (see `spec/working_with_enumberables_spec.rb`).  When our methods are working properly, all the tests will pass.
+Tests have also been provided, further illustrating the desired behavior of each method (see `spec/working_with_enumerables_spec.rb`).  When our methods are working properly, all the tests will pass.
 
 *Constraint:*  Don't use `for ... in`, the `#each` method, or any other way of iterating over an array.  Use the recommended enumerable method.
 
